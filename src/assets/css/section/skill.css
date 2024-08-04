@@ -69,12 +69,41 @@
 .skill__desc li{
     width: 50px;
     height: 50px;
-    border-radius: 20px;
-    background-color: #ccc;
     margin-right: 5px;
     display: block;
     font-size: 0;
-
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.skill__desc ul>li:nth-child(1){
+    background-image: url(../../img/photoshop.svg);
+}
+.skill__desc ul>li:nth-child(2){
+    background-image: url(../../img/illustrator.svg);
+}
+.skill__desc ul>li:nth-child(3){
+    background-image: url(../../img/figma.svg);
+}
+.skill__desc ul>li:nth-child(4){
+    background-image: url(../../img/premiere.svg);
+}
+.skill__desc ul>li:nth-child(5){
+    background-image: url(../../img/finalcut.png);
+}
+.skill__desc ul>li:nth-child(6){
+    background-image: url(../../img/html5.svg);
+}
+.skill__desc ul>li:nth-child(7){
+    background-image: url(../../img/css3.svg);
+}
+.skill__desc ul>li:nth-child(8){
+    background-image: url(../../img/javascript.svg);
+}
+.skill__desc ul>li:nth-child(9){
+    background-image: url(../../img/vue.svg);
+}
+.skill__desc ul>li:nth-child(10){
+    background-image: url(../../img/react.svg);
 }
 @media (max-width: 800px){
     .skill__inner {
@@ -93,5 +122,8 @@
     }
     .skill__desc span {
         font-size: 10vw;
+    }
+    .skill__pic{
+        display: none;
     }
 }
