@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YGGR</title>
+    <!-- 유투브영상 배경으로 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
+    <script>
+        jQuery( function() {
+         jQuery( '#background' ).YTPlayer();
+         jQuery( '#cf' ).YTPlayer();
+        });
+    </script>
+    <style>
+    #background {
+        z-index: 2;
+    }
+    #wrapper_background{
+        min-width: 100%;
+        min-height: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div id="background" class="player" data-property="{
+        videoURL: 'https://youtu.be/Q7AbIQHYidQ',
+        mute: true,
+        showControls: false,
+        useOnMobile: true,
+        quality: 'highres',
+        containment: 'body',
+        loop: true,
+        autoPlay: true,
+        stopMovieOnBlur: false,
+        startAt: 0,
+        opacity: 1
+        }">
+    </div>
+</body>
+</html>
