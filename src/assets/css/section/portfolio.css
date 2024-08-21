@@ -2,6 +2,8 @@
     width: 100%;
     margin-top: 30vh;
     overflow: hidden;
+    height: auto !important;
+    max-width: initial !important;
 }
 .port__inner {
     padding: 16px;
