@@ -25,11 +25,13 @@
 .skill__pic{
     width: 20%;
     height: 20vw;
-    background-color: #ccc;
     position: absolute;
     left: 10%;
     top: 20%;
     border-radius: 20px;
+    background-image: url(../../img/me.png);
+    background-size: cover;
+    mix-blend-mode: multiply;
 }
 .skill__title em {
     font-size: 1.25rem;
