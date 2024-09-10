@@ -22,22 +22,34 @@
     border-bottom: 0.4vw solid var(--black100);
     z-index: 1;
 }
+.skill__info{
+    display: flex;
+    flex-direction: column;
+}
 .skill__pic{
     width: 20%;
     height: 20vw;
     position: absolute;
     left: 10%;
     top: 20%;
-    border-radius: 20px;
     background-image: url(../../img/me.png);
     background-size: cover;
     mix-blend-mode: multiply;
+ }
+.skill__text{
+    width: 25%;
+    position: absolute;
+    left: 10%;
+    top: 45%;
+
+  
 }
 .skill__title em {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 2;
 }
+
 .skill__desc {
     width: 50%;
 }
@@ -126,6 +138,9 @@
         font-size: 10vw;
     }
     .skill__pic{
+        display: none;
+    }
+    .skill__text{
         display: none;
     }
 }
